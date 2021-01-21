@@ -1,0 +1,51 @@
+{
+  "name": "eventzi_api",
+  "version": "1.0.0",
+  "description": "api for the eventzi platform frontend",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "dev": "nodemon -L src/index",
+    "test-events": "./node_modules/.bin/mocha  'src/test/eventsTest.js'",
+    "test-users": "./node_modules/.bin/mocha  'src/test/usersTest.js' ",
+    "test-partners": "./node_modules/.bin/mocha  'src/test/partnersTest.js' ",
+    "test-organizations": "./node_modules/.bin/mocha  'src/test/organizationsTest.js' ",
+    "test-difusion": "./node_modules/.bin/mocha  'src/test/difusionTest.js' ",
+    "test-dashboard": "./node_modules/.bin/mocha  'src/test/dashboardTest.js' ",
+    "test": "./node_modules/.bin/mocha  'src/test/**/*.js' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Platzi-Master-TM-NancySalazar/eventzi_api.git"
+  },
+  "author": "Cohort 6 Platzi Master",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Platzi-Master-TM-NancySalazar/eventzi_api/issues"
+  },
+  "homepage": "https://github.com/Platzi-Master-TM-NancySalazar/eventzi_api#readme",
+  "dependencies": {
+    "aws-sdk": "^2.774.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "check-node-version": "^4.0.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mocha": "^8.2.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "node-cron": "^2.0.3",
+    "nodemon": "^2.0.4",
+    "pm2": "^4.5.0",
+    "shelljs": "^0.8.4",
+    "should": "^13.2.3",
+    "supertest": "^6.0.1"
+  }
+}
